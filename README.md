@@ -1,24 +1,3 @@
-# README
+This is a Rails backend API that I built for my blog page and hosted it on an Amazon EC2 Instance.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hosting on PaaS(Platform as a Service) websites like Heroku and Render is easy but they have their own drawbacks as well e.g Hosting my APIs on Render always led to very slow load times when I used them on my frontend applications. I decided to learn how to host server-side applications on a server like AWS where you have to do manual DevOps. To set up the cloud machine to run the rails server, I had to install Ruby(3.2.2), Rails(7.0.7.2), Nodejs, and I chose to work with the SQLite Database (PostgreSQL is better for production but I kept getting authentication errors so I chose an alternative). I pointed my server to my custom subdomain (blog.andrewmuchiri.com) using NGINX and configured it to use my SSL certificate from LetsEncrypt. Now when I use the API on a frontend application, I get blazingly fast load times.
