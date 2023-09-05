@@ -1,4 +1,5 @@
 class OthersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_other, only: %i[ show update destroy ]
 
   # GET /others
